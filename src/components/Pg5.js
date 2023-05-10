@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import image from '../Assets/lastimg.png'
 import './Pg5.css'
 import bag from '../Assets/scheduled.png'
@@ -8,6 +8,15 @@ import link from '../Assets/Link.png'
 import person from '../Assets/person.png'
 
 function Pg5() {
+    const [data,setData]=useState([]);
+
+    useEffect(()=>{
+        fetch("http://localhost:3001",{
+          method:"GET",
+        })
+        .then(response => response.json())
+        .then(data => setData(data));
+    },[])
   return (
     <div className='pg5'>
         <img className='topimg' src={image} alt="" />
@@ -16,16 +25,16 @@ function Pg5() {
             <div className="infomain">
                 <span>
                     <img src={bag} alt="" />
-                    Scheduled for September 18,2021</span><br />
+                    Scheduled for {data.date}</span><br />
                 <span>
                     <img src={clock} alt="" />
-                    From 10:30 to 10:45 am(`15 mins`)</span><br />
+                    From {data.time}(`15 mins`)</span><br />
                 <span>
                     <img src={person} alt="" />
                     Consultant will be our care counsellor</span><br />
                 <span>
                     <img src={call} alt="" />
-                    Consultation will be an audio call</span><br />
+                    Consultation will be a video call</span><br />
                 <span>
                     <img src={link} alt="" />
                     Link sent on your email and whatsapp</span><br />

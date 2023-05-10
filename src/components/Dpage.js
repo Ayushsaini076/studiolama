@@ -111,15 +111,31 @@ function Dpage() {
         {/* {disease.symptoms.map((ele)=>console.log(ele))} */}
         {childSymptomsType.map((element)=>{
           if(element.name===dname){
-            element.symptoms.map((ele)=>{
-              <Dcard
-              message={ele}
-              />
-            })
-          }
+          return(
+            
+              element.symptoms.map((ele)=>{
+                console.log(ele);
+                return(
+                  <Dcard
+                  disease={ele}
+                  />
+              
+  
+                )
+                
+              })
+            
+
+          )
+            }
+          
         })}
         
       </div>
+      <Link to="/pg3">
+      <button className="btn">Next</button>
+      </Link>
+      
     </div>
   );
 }

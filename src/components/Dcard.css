@@ -1,4 +1,8 @@
 .dcard{
-    border: 1px solid red;
-    text-decoration: none;
+    border: 1px solid #E0E0E0;
+    width: 20em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    height: 1.8em;
+    align-items: center;
 }

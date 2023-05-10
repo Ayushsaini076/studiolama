@@ -18,11 +18,24 @@ const initialValues={
 
 function Page1() {
 
+  
+
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
       initialValues,
       validationSchema: page1Schema,
       onSubmit: (values, action) => {
+        fetch("http://localhost:3001",{
+          method:"POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body:JSON.stringify(values)
+        })
+        .then(function(response){
+          console.log(response.status)
+        })
+        .catch(err=>{console.log(err)})
         console.log(  
           values
         );
@@ -177,12 +190,14 @@ function Page1() {
           <p className="form-errors">{errors.number}</p>
         ):null}
 
-
-      </form>
-
       <Link to={`/pg2?myname=${values.name}`}>
       <button  className="btn"  type="submit">Next</button>
       </Link>
+
+
+      </form>
+
+      
       
         
         
