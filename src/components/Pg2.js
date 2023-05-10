@@ -105,7 +105,7 @@ function Pg2() {
       {/* {myArr.map((ele)=>{
         console.log(ele);
       })} */}
-      <Link to={`/dpage?myname=${cname}&&dname=${myArr[0]}`}>
+      <Link to={`/dpage?myname=${cname}&&dname=Speech and Communication`}>
       <button className="btn">Next</button>
       </Link>
       
