@@ -1,0 +1,17 @@
+.topimg{
+    width: 15em;
+    margin-left: 2em;
+}
+
+.info{
+    margin-top: 1em;
+    border: 1px solid #4E2BAC;
+    border-radius: 0.5em;
+    margin-bottom: 8em;
+    padding: 0 0 2em 2em;
+}
+
+.infomain img{
+    height: 0.8em;
+    margin-right: 1em;
+}

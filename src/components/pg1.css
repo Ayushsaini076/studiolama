@@ -1,0 +1,56 @@
+.pg1 form button{
+    margin-top: 1em;
+    width: 19em;
+    height: 2em;
+    background-color: #F2F2F2;
+    font-size: medium;
+    color: #ACACAC;
+    border-color:  #F2F2F2;
+
+}
+
+.pg1 form button:hover{
+    background-color: #7C55C5;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.pg1 form label{
+    color: #424242;
+    font-size: small;
+}
+.pg1 form input{
+    border: 1px solid #E0E0E0;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+
+}
+
+.ninput{
+    width: 22em;
+    height: 1.5em;
+    
+}
+
+.cw{
+    margin-right: 10em;
+}
+.cin{
+    margin-right: 3em;
+}
+.code{
+    width: 4.4em;
+    margin-right: 1.5em
+}
+.pin{
+    width: 15em;
+    
+}
+.form-errors{
+    color: red;
+    font-size: xx-small;
+    margin-top: 0;
+}
+
+/* .variable{
+    display: none;
+} */

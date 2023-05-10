@@ -1,0 +1,29 @@
+.card{
+    border: 1px solid #E0E0E0;
+    border-radius: 0.3em;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    width: 24em;
+    background-color: #FFFFFF;
+
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:after{
+    background-color: #EDE7F6;
+}
+.card img{
+    height: 1.5em;
+    margin: 2.0em 2em 0 2em;
+}
+.ccontent h4{
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.ccontent p{
+    margin-top: 0px;
+    text-decoration: none;
+}

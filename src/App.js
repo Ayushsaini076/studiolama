@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './components/Header';
+import Page1 from './components/Page1';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Pg2 from './components/Pg2';
+import Pg3 from './components/Pg3';
+import Pg4 from './components/Pg4';
+import Dpage from './components/Dpage';
+import Pg5 from './components/Pg5';
+// import SandC from './components/SandC';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      
+      <BrowserRouter>
+      <Routes>
+        <Route path='/pg2' element={<Pg2/>}/>
+        <Route path='/' element={<Page1/>}/>
+        <Route path='/pg3' element={<Pg3/>}/>
+        <Route path='/pg4' element={<Pg4/>}/>
+        <Route path='/dpage' element={<Dpage/>}/>
+        <Route path='/pg5' element={<Pg5/>}/>
+        {/* <Route path='/Speech and Communication' element={<SandC/>}/> */}
+      </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }

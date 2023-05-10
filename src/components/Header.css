@@ -1,0 +1,12 @@
+.pg img{
+    width: 5em;
+}
+.ht img{
+    width: 1em;
+    margin-right: 0.3em;
+
+}
+
+.ht img:hover{
+    cursor: pointer;
+}
